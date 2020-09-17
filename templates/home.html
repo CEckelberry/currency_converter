@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block title %}ForEx Converter!{% endblock %}
+
+{% block content %}
+
+
+<div class="container card">
+    <h5 class="card-header info-color white-text text-center py-4">
+        <strong>Currency Converter</strong>
+    </h5>
+    <!--Card content-->
+    <div class="card-body px-lg-5 pt-0">
+
+        <!-- Form -->
+        <form class="text-center" style="color: #757575;" method="POST" action="/result">
+
+            <!-- inputcurrency -->
+            <div class="md-form">
+                <input type="text" id="inputcurrency" name="inputcurrency" class="form-control">
+                <label for="materialinputcurrency">Converting from: </label>
+            </div>
+
+            <!-- outputcurrency -->
+            <div class="md-form">
+                <input type="text" id="outputcurrency" name="outputcurrency" class="form-control">
+                <label for="materialoutputcurrency">Converting to: </label>
+            </div>
+            <!-- result -->
+            <div class="md-form input-with-pre-icon">
+                <i class="fas fa-coins input-prefix"></i>
+                <input type="text" id="amount" name="amount" class="form-control">
+                <label for="amount">Amount</label>
+            </div>
+            <button type="submit" class="btn btn-info">Convert</button>
+        </form>
+    </div>
+        
+</div>
+
+{% endblock %}

@@ -1,0 +1,23 @@
+.messages .error {
+	background-color: #ef5350;
+	margin-top: .75rem;
+	padding: .25rem;
+	text-align: center;
+	font-size: medium;
+	font-weight: bold;
+}
+
+h1 {
+	text-align: center;
+	margin-top: 20%;
+}
+
+h2 {
+	text-align: center;
+	margin-top: 2.5%;
+	margin-bottom: 2.5%;
+}
+
+#result {
+	margin-top: 8%;
+}

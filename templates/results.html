@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}Results!{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+            <h1 class="display-2">{{input_symbol}}&nbsp;{{amount}}</h1>
+            <h2 class="display-4">({{input_name}})</h2>
+            <img src="/static/arrow-down.png" alt="down arrow" class="rounded mx-auto d-block">
+            <h1 class="display-2" id="result">{{output_symbol}}&nbsp;{{converted}}</h1>
+            <h2 class="display-4">({{output_name}})</h2>
+            <form action="/">
+                <button type="submit" class="btn btn-cyan btn-lg btn-block">Back To Home</button>
+            </form>
+        </div>
+        <div class="col-2"></div>
+    </div>
+</div>
+
+{% endblock %}
